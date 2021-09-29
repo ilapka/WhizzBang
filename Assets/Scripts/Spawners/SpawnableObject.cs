@@ -9,7 +9,7 @@ namespace WhizzBang.Spawners
         
         private void OnDestroy()
         {
-            OnDestroyEvent.Invoke();
+            OnDestroyEvent?.Invoke();
         }
     }
 }

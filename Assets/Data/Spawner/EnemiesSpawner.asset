@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e303b33bebc43009256560b0393dd2f, type: 3}
   m_Name: EnemiesSpawner
   m_EditorClassIdentifier: 
-  objectsToSpawn: []
+  spawnDelayTimeRange: {x: 1, y: 2}
+  objectsToSpawn:
+  - prefab: {fileID: 2673994427248648970, guid: 768ed002f96fc5746899439d22de08e2, type: 3}
+    chanceWeightToSpawn: 5
+  - prefab: {fileID: 3145534628511484549, guid: ead3c1c151ea6d6438a62ac446bc279e, type: 3}
+    chanceWeightToSpawn: 5

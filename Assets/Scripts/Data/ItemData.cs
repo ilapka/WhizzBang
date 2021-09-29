@@ -2,9 +2,9 @@ using UnityEngine;
 
 namespace WhizzBang.Data
 {
-    [CreateAssetMenu(fileName = "ProjectileItemData", menuName = "WhizzBang/ProjectileItemData", order = 0)]
-    public class ProjectileItemData : ItemData
+    [CreateAssetMenu(fileName = "ItemData", menuName = "WhizzBang/ItemData", order = 0)]
+    public class ItemData : ScriptableObject
     {
-        public GameObject projectilePrefab;
+        
     }
 }

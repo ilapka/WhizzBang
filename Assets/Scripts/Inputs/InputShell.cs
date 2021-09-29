@@ -11,6 +11,6 @@ namespace WhizzBang.Inputs
 
     public abstract class InputShell : MonoBehaviour
     {
-        public UnityEvent<InputAxis> updateAxisEvent;
+        public UnityEvent<InputAxis> UpdateAxisEvent;
     }
 }

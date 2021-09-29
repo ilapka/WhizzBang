@@ -58,11 +58,16 @@
           <e p="Data" t="Include">
             <e p="EnemyData.cs" t="Include" />
             <e p="ItemData.cs" t="Include" />
+            <e p="MovementData.cs" t="Include" />
             <e p="ProjectileItemData.cs" t="Include" />
             <e p="SpawnerData.cs" t="Include" />
           </e>
           <e p="Enemies" t="Include">
             <e p="Enemy.cs" t="Include" />
+          </e>
+          <e p="Inputs" t="Include">
+            <e p="InputShell.cs" t="Include" />
+            <e p="PlayerInput.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
             <e p="IHaveHealth.cs" t="Include" />
@@ -75,6 +80,7 @@
           </e>
           <e p="Player" t="Include">
             <e p="ItemCollector.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
           </e>
           <e p="Spawners" t="Include">
             <e p="SpawnableObject.cs" t="Include" />

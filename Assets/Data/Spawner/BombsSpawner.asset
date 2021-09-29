@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e303b33bebc43009256560b0393dd2f, type: 3}
   m_Name: BombsSpawner
   m_EditorClassIdentifier: 
-  objectsToSpawn: []
+  spawnDelayTimeRange: {x: 1, y: 2}
+  objectsToSpawn:
+  - prefab: {fileID: 6037977053392896356, guid: 3240bae2fdf1b264e81157334aeeb2fc, type: 3}
+    chanceWeightToSpawn: 5
+  - prefab: {fileID: 1529900771829335440, guid: 217c5e6fbf92774428f72ba0ef93ae9c, type: 3}
+    chanceWeightToSpawn: 5
+  - prefab: {fileID: 7936889776629358483, guid: 3cfeb33ef467fe440b033cd1f20c95a7, type: 3}
+    chanceWeightToSpawn: 5

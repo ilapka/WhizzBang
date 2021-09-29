@@ -13,7 +13,7 @@ namespace WhizzBang.Inputs
 
         private void UpdateAxisInput()
         {
-            updateAxisEvent.Invoke(new InputAxis()
+            UpdateAxisEvent.Invoke(new InputAxis()
             {
                 horizontalInput = Input.GetAxis("Horizontal"),
                 verticalInput = Input.GetAxis("Vertical"),

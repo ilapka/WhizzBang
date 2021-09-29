@@ -16,6 +16,7 @@ namespace WhizzBang.Data
     [CreateAssetMenu(fileName = "SpawnerData", menuName = "WhizzBang/SpawnerData", order = 0)]
     public class SpawnerData : ScriptableObject
     {
+        [Header("General")]
         public Vector2 spawnDelayTimeRange;
         public List<SpawnableStruct> objectsToSpawn;
     }

@@ -9,6 +9,10 @@ namespace WhizzBang.Spawners
     public class Spawner : MonoBehaviour
     {
         [SerializeField] private SpawnerData spawnerData;
+        [Header("Rotation")]
+        [Range(0f, 360f)]
+        [SerializeField] private float yRotation;
+        [SerializeField] private bool randomYRotation;
 
         private float _totalSpawnWeight;
 
@@ -23,6 +27,8 @@ namespace WhizzBang.Spawners
 
         private void SpawnObject(bool useDelay)
         {
+            if(gameObject.activeInHierarchy == false) return;
+            
             StartCoroutine(SpawnCoroutine(useDelay));
         }
 
@@ -33,7 +39,10 @@ namespace WhizzBang.Spawners
                 var delayTime = Random.Range(spawnerData.spawnDelayTimeRange.x, spawnerData.spawnDelayTimeRange.y);
                 yield return new WaitForSeconds(delayTime);
             }
-            var spawnedObject = Instantiate(GetRandomSpawnableObject(), transform);
+            var prefab = GetRandomSpawnableObject();
+            var prefabRotation = prefab.transform.rotation;
+            var rotation = Quaternion.Euler(prefabRotation.x, randomYRotation ? Random.Range(0f, 360f) : yRotation, prefabRotation.z);
+            var spawnedObject = Instantiate(prefab, transform.position, rotation, transform);
             spawnedObject.OnDestroyEvent.AddListener(() =>
             {
                 SpawnObject(true);

@@ -19,7 +19,7 @@ namespace WhizzBang.Player
         void Start()
         {
             _stoppingMaxDistance = rootCollider.radius * 1.1f;
-            inputShell.updateAxisEvent.AddListener(Move);
+            inputShell.UpdateAxisEvent.AddListener(Move);
         }
 
         private void Move(InputAxis inputAxis)
@@ -39,7 +39,7 @@ namespace WhizzBang.Player
 
         private void OnDestroy()
         {
-            inputShell.updateAxisEvent.RemoveListener(Move);
+            inputShell.UpdateAxisEvent.RemoveListener(Move);
         }
     }
 }
