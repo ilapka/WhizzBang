@@ -1591,8 +1591,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2110983282}
-  - component: {fileID: 2110983284}
   - component: {fileID: 2110983283}
+  - component: {fileID: 2110983284}
   m_Layer: 0
   m_Name: '[ItemCollector]'
   m_TagString: Untagged
@@ -1627,8 +1627,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInventory: {fileID: 104333869}
---- !u!65 &2110983284
-BoxCollider:
+  _capsuleCollider: {fileID: 2110983284}
+  _collectionRadius: 1
+--- !u!136 &2110983284
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1637,9 +1639,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.751377, y: 4.841627, z: 2.8597407}
-  m_Center: {x: 0, y: 0.50445604, z: 0}
+  m_Radius: 0.5
+  m_Height: 4.344278
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.43156624, z: 0}
 --- !u!1001 &3360982274650556967
 PrefabInstance:
   m_ObjectHideFlags: 0
