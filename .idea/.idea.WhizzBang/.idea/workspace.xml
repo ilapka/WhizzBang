@@ -25,11 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2260e4c0-5277-4b20-96d9-cf35f735da7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyData.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/ItemCollector.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -60,12 +60,34 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SpawnerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISpawnable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/SpawnableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bombs/Bomb.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ITakeDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/EnemyData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PickUpItems/IPickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/PickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/PlayerInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/PickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/PickUpItems/BombPickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/InventoryItems/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItems/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/BombPickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/ItemType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/NewBehaviourScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItems/ItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/PickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/ItemCollector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
       </list>
     </option>
   </component>
@@ -110,6 +132,8 @@
       <updated>1632826606158</updated>
       <workItem from="1632826621949" duration="1754000" />
       <workItem from="1632828480846" duration="12255000" />
+      <workItem from="1632857462386" duration="5709000" />
+      <workItem from="1632904024688" duration="2299000" />
     </task>
     <servers />
   </component>

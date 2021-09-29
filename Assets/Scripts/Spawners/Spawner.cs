@@ -10,7 +10,7 @@ namespace WhizzBang.Spawners
     {
         [SerializeField] private SpawnerData spawnerData;
 
-        private float _totalSpawnWeight = 0f;
+        private float _totalSpawnWeight;
 
         void Start()
         {
@@ -34,7 +34,7 @@ namespace WhizzBang.Spawners
                 yield return new WaitForSeconds(delayTime);
             }
             var spawnedObject = Instantiate(GetRandomSpawnableObject(), transform);
-            spawnedObject.onDestroyEvent.AddListener(() =>
+            spawnedObject.OnDestroyEvent.AddListener(() =>
             {
                 SpawnObject(true);
             });
