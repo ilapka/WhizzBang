@@ -24,8 +24,8 @@ namespace WhizzBang.Player
 
         private void Move(InputAxis inputAxis)
         {
-            var moveDirection = new Vector3(inputAxis.horizontalInput, 0f, inputAxis.verticalInput).normalized;
-            var acceleration = Mathf.Clamp(Mathf.Abs(inputAxis.horizontalInput) + Mathf.Abs(inputAxis.verticalInput), 0f, 1f); 
+            var moveDirection = new Vector3(inputAxis.HorizontalInput, 0f, inputAxis.VerticalInput).normalized;
+            var acceleration = Mathf.Clamp(Mathf.Abs(inputAxis.HorizontalInput) + Mathf.Abs(inputAxis.VerticalInput), 0f, 1f); 
 
             if(!Physics.Raycast(rootRigidbody.position, moveDirection, out RaycastHit hitInfo, _stoppingMaxDistance, movementData.obstaclesLayerMask))
             {

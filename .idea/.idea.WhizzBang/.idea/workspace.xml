@@ -27,27 +27,15 @@
     <list default="true" id="2260e4c0-5277-4b20-96d9-cf35f735da7f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/MovementData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/MovementData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Spawner/BombsSpawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Spawner/BombsSpawner.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Spawner/EnemiesSpawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Spawner/EnemiesSpawner.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Spawner/MixSpawner.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Spawner/MixSpawner.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Avatar Mask.mask" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Avatar Mask.mask.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Cyclopes.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Cyclopes.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Fiery.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Fiery.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/BlackBombData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/BlackBombData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/BlueBombData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/BlueBombData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/RedBombData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/RedBombData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/SpawnerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SpawnerData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/InputShell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/InputShell.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/PlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/PickUpItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/PickUpItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +46,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventoryCellUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventoryUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/ItemCollector.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,7 +62,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/BaseInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/MovementData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/MovementData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerData.cs" />
@@ -101,14 +90,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/NewBehaviourScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItems/ItemData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/ItemCollector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/InputShell.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SpawnerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/PickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/MovementData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SpawnerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/InputShell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryCellUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
       </list>
     </option>
   </component>
@@ -154,7 +146,8 @@
       <workItem from="1632826621949" duration="1754000" />
       <workItem from="1632828480846" duration="12255000" />
       <workItem from="1632857462386" duration="5709000" />
-      <workItem from="1632904024688" duration="6449000" />
+      <workItem from="1632904024688" duration="7228000" />
+      <workItem from="1632946310905" duration="2880000" />
     </task>
     <servers />
   </component>
