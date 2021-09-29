@@ -6,7 +6,8 @@ namespace WhizzBang.Data
     public class MovementData : ScriptableObject
     {
         [Range(0f, 70f)]
-        public float speed;
+        public float movementSpeed;
+        public float rotationSpeed;
         public LayerMask obstaclesLayerMask;
     }
 }

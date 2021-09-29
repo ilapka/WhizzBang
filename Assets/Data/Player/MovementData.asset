@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c319d424e9449a882c71ebdcdac5b7b, type: 3}
   m_Name: MovementData
   m_EditorClassIdentifier: 
-  speed: 15
+  movementSpeed: 15
+  rotationSpeed: 15
   obstaclesLayerMask:
     serializedVersion: 2
     m_Bits: 1

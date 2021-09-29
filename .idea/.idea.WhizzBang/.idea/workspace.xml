@@ -24,7 +24,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2260e4c0-5277-4b20-96d9-cf35f735da7f" name="Default Changelist" comment="" />
+    <list default="true" id="2260e4c0-5277-4b20-96d9-cf35f735da7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PlayerMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/PlayerMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/MovementData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/MovementData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,8 +56,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/BaseInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/MovementData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/MovementData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISpawnable.cs" />
@@ -76,7 +82,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/ItemType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/NewBehaviourScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItems/ItemData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/ItemCollector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/InputShell.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" />
@@ -85,6 +90,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SpawnerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/PickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/ItemCollector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/MovementData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Rotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
       </list>
     </option>
   </component>

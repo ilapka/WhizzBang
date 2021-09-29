@@ -80,7 +80,7 @@
           </e>
           <e p="Player" t="Include">
             <e p="ItemCollector.cs" t="Include" />
-            <e p="PlayerMovement.cs" t="Include" />
+            <e p="Movement.cs" t="Include" />
           </e>
           <e p="Spawners" t="Include">
             <e p="SpawnableObject.cs" t="Include" />
