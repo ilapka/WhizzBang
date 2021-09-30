@@ -365,7 +365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 104333870}
   - component: {fileID: 104333869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '[Inventory]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1146,7 +1146,7 @@ GameObject:
   - component: {fileID: 1081479516}
   - component: {fileID: 1081479518}
   - component: {fileID: 1081479517}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '[Player]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1227,7 +1227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1088316534}
   - component: {fileID: 1088316535}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '[Hands]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1450,6 +1450,8 @@ MonoBehaviour:
   MouseButtonUpEvent:
     m_PersistentCalls:
       m_Calls: []
+  camera: {fileID: 963194227}
+  mouseRayLenght: 1000
 --- !u!1 &1352197412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,7 +1858,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1948453413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HandContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1888,7 +1890,7 @@ GameObject:
   - component: {fileID: 2110983282}
   - component: {fileID: 2110983283}
   - component: {fileID: 2110983284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '[ItemCollector]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2069,6 +2071,22 @@ PrefabInstance:
     - target: {fileID: 9122060750624874237, guid: 14a4e49af24f23541b6b8770e10b19d5, type: 3}
       propertyPath: m_Name
       value: PlayerMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122060750624874237, guid: 14a4e49af24f23541b6b8770e10b19d5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122060751135389507, guid: 14a4e49af24f23541b6b8770e10b19d5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122060751388986106, guid: 14a4e49af24f23541b6b8770e10b19d5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122060752631419819, guid: 14a4e49af24f23541b6b8770e10b19d5, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14a4e49af24f23541b6b8770e10b19d5, type: 3}

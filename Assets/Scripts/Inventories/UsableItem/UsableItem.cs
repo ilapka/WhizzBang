@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using WhizzBang.Inputs;
 using WhizzBang.Player;
 
 namespace WhizzBang.Inventories.UsableItem
@@ -12,7 +13,7 @@ namespace WhizzBang.Inventories.UsableItem
             this.hands = hands;
         }
 
-        public abstract void OnMouseHold();
+        public abstract void OnMouseHold(HoldMouseInformation hitTransform);
         public abstract void OnMouseButtonUp();
     }
 }

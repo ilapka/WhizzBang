@@ -80,6 +80,7 @@
             </e>
             <e p="UsableItem" t="Include">
               <e p="Projectile.cs" t="Include" />
+              <e p="Trajectory.cs" t="Include" />
               <e p="UsableItem.cs" t="Include" />
             </e>
           </e>

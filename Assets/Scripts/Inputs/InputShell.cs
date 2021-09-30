@@ -9,12 +9,18 @@ namespace WhizzBang.Inputs
         public float VerticalInput;
     }
 
+    public struct HoldMouseInformation
+    {
+        public bool IsHit;
+        public RaycastHit RaycastHit;
+    }
+
     public abstract class InputShell : MonoBehaviour
     {
         public UnityEvent<InputAxis> UpdateAxisEvent;
         public UnityEvent RightArrowButtonDownEvent;
         public UnityEvent LeftArrowButtonDownEvent;
-        public UnityEvent HoldMouseButtonEvent;
+        public UnityEvent<HoldMouseInformation> HoldMouseButtonEvent;
         public UnityEvent MouseButtonUpEvent;
     }
 }

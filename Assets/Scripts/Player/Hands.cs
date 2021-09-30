@@ -68,11 +68,11 @@ namespace WhizzBang.Player
             Take(previousItemCell,true);
         }
         
-        private void OnMouseHold()
+        private void OnMouseHold(HoldMouseInformation holdMouseInformation)
         {
             if(_currentItem == null) return;
 
-            _currentItem.OnMouseHold();
+            _currentItem.OnMouseHold(holdMouseInformation);
         }
         
         private void OnMouseButtonUp()
