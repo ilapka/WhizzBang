@@ -22,5 +22,6 @@ namespace WhizzBang.Inputs
         public UnityEvent LeftArrowButtonDownEvent;
         public UnityEvent<HoldMouseInformation> HoldMouseButtonEvent;
         public UnityEvent MouseButtonUpEvent;
+        public UnityEvent MouseButtonDownEvent;
     }
 }

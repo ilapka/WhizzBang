@@ -16,7 +16,9 @@ namespace WhizzBang.Player
 
         private UsableItem _currentItem;
         private ItemCell _currentItemCell;
-        
+
+        public bool HaveItem => _currentItem != null;
+
         private void Start()
         {
             inventory.AddedItemEvent.AddListener(itemData => Take(itemData, false));

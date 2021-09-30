@@ -46,6 +46,11 @@ namespace WhizzBang.Inputs
             {
                 MouseButtonUpEvent.Invoke();
             }
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                MouseButtonDownEvent.Invoke();
+            }
         }
     }
 }

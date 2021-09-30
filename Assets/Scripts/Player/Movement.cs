@@ -15,17 +15,23 @@ namespace WhizzBang.Player
         [SerializeField] private Rigidbody rootRigidbody;
         [SerializeField] private CapsuleCollider rootCollider;
         [SerializeField] private MovementData movementData;
+        [SerializeField] private Hands hands;
 
         private float _stoppingMaxDistance;
+        private bool _holdMouse;
 
         void Start()
         {
             _stoppingMaxDistance = rootCollider.radius * 1.1f;
             inputShell.UpdateAxisEvent.AddListener(Move);
+            inputShell.MouseButtonDownEvent.AddListener(() => _holdMouse = true);
+            inputShell.MouseButtonUpEvent.AddListener(() => _holdMouse = false);
         }
 
         private void Move(InputAxis inputAxis)
         {
+            if(_holdMouse && hands.HaveItem) return;
+            
             var moveDirection = new Vector3(inputAxis.HorizontalInput, 0f, inputAxis.VerticalInput).normalized;
             var acceleration = Mathf.Clamp(Mathf.Abs(inputAxis.HorizontalInput) + Mathf.Abs(inputAxis.VerticalInput), 0f, 1f);
 
