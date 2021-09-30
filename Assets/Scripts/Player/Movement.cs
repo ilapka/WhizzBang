@@ -43,6 +43,8 @@ namespace WhizzBang.Player
 
         private void Rotate(Vector3 direction, float acceleration)
         {
+            if(acceleration == 0) return;
+            
             var rotation = Quaternion.Slerp (transform.rotation, 
                 Quaternion.LookRotation (direction), Time.deltaTime * acceleration * movementData.rotationSpeed);
             rootRigidbody.MoveRotation(rotation); 

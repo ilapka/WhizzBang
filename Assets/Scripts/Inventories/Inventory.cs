@@ -1,51 +1,82 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using WhizzBang.Data;
 
 namespace WhizzBang.Inventories
 {
-    public struct InventoryCell
+    public struct ItemCell
     {
         public int ItemCount;
+        public ItemData Data;
+        public int Index;
     }
 
     public class Inventory : MonoBehaviour
     {
-        private readonly Dictionary<ItemData, InventoryCell> _itemDataCellDictionary = new Dictionary<ItemData, InventoryCell>();
+        private readonly List<ItemCell> _itemsCellList = new List<ItemCell>();
+        
+        public UnityEvent<ItemCell> AddedItemEvent;
+        public UnityEvent<ItemCell> RemovedItemEvent;
 
-        public UnityEvent<ItemData> AddedItemEvent;
-        public UnityEvent<ItemData> RemovedItemEvent;
-
-        public void Add(ItemData itemData)
+        public void AddItem(ItemData itemData)
         {
-            if (_itemDataCellDictionary.TryGetValue(itemData, out InventoryCell inventoryCell))
+            var itemCell = _itemsCellList.Find(cell => cell.Data == itemData);
+            if (itemCell.Data != null)
             {
-                inventoryCell.ItemCount++;
+                itemCell.ItemCount++;
             }
             else
             {
-                _itemDataCellDictionary.Add(itemData, new InventoryCell(){ ItemCount = 1 });
+                itemCell.Index = _itemsCellList.Count;
+                itemCell.Data = itemData;
+                itemCell.ItemCount = 1;
+                _itemsCellList.Add(itemCell);
             }
-            
-            AddedItemEvent.Invoke(itemData);
+            AddedItemEvent.Invoke(itemCell);
         }
 
-        public void Remove(ItemData itemData)
+        public void RemoveItem(ItemData itemData)
         {
-            if (!_itemDataCellDictionary.TryGetValue(itemData, out InventoryCell inventoryCell))
+            var itemCell = _itemsCellList.Find(cell => cell.Data == itemData);
+            if (itemCell.Data == null)
             {
                 Debug.Log("The item you are trying to remove not found");
                 return;
             }
-            
-            inventoryCell.ItemCount--;
-            if (inventoryCell.ItemCount <= 0)
+
+            itemCell.ItemCount--;
+            if (itemCell.ItemCount <= 0)
             {
-                _itemDataCellDictionary.Remove(itemData);
+                _itemsCellList.Remove(itemCell);
+            }
+            RemovedItemEvent.Invoke(itemCell);
+        }
+
+        public bool GetNextItem(int currentCellIndex, out ItemCell nextItemCell)
+        {
+            if (_itemsCellList.Count <= 0 || _itemsCellList.Count <= ++currentCellIndex)
+            {
+                nextItemCell = default;
+                return false;
             }
             
-            RemovedItemEvent.Invoke(itemData);
+            nextItemCell = _itemsCellList[currentCellIndex];
+            return true;
+        }
+        
+        public bool GetPreviousItem(int currentCellIndex, out ItemCell previousNextItemCell)
+        {
+            if (_itemsCellList.Count <= 0 || --currentCellIndex < 0)
+            {
+                previousNextItemCell = default;
+                return false;
+            }
+            
+            previousNextItemCell = _itemsCellList[currentCellIndex];
+            return true;
         }
     }
 }

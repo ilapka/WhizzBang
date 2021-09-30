@@ -79,6 +79,7 @@
             </e>
           </e>
           <e p="Player" t="Include">
+            <e p="Hands.cs" t="Include" />
             <e p="ItemCollector.cs" t="Include" />
             <e p="Movement.cs" t="Include" />
           </e>

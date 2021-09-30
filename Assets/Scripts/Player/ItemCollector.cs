@@ -20,7 +20,7 @@ namespace WhizzBang.Player
         private void OnTriggerEnter(Collider other)
         {
             if (!other.TryGetComponent(out PickUpItem pickUpItem)) return;
-            _playerInventory.Add(pickUpItem.PickUp());
+            _playerInventory.AddItem(pickUpItem.PickUp());
         }
     }
 }

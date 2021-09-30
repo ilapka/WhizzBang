@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8129ab333b8430d99ac2245d46e455b, type: 3}
   m_Name: RedBombData
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 0}
+  prefab: {fileID: 438009996616356949, guid: 9ce0b0c61bd71134abfe8f12158fbcb5, type: 3}
