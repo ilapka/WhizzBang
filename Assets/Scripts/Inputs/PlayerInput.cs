@@ -6,6 +6,9 @@ namespace WhizzBang.Inputs
 {
     public class PlayerInput : InputShell
     {
+        [SerializeField] private Camera camera;
+        [SerializeField] private float mouseRayLenght;
+        
         private void FixedUpdate()
         {
             UpdateAxisInput();
@@ -27,12 +30,22 @@ namespace WhizzBang.Inputs
             
             if(Input.GetKeyDown(KeyCode.RightArrow))
                 RightArrowButtonDownEvent.Invoke();
-            
-            if(Input.GetMouseButton(0))
-                HoldMouseButtonEvent.Invoke();
-            
-            if(Input.GetMouseButtonUp(0))
+
+            if (Input.GetMouseButton(0))
+            {
+                var ray = camera.ScreenPointToRay(Input.mousePosition);
+                var holdMouseInformation = new HoldMouseInformation()
+                {
+                    IsHit = Physics.Raycast(ray, out RaycastHit hit, mouseRayLenght),
+                    RaycastHit = hit,
+                };
+                HoldMouseButtonEvent.Invoke(holdMouseInformation);
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
                 MouseButtonUpEvent.Invoke();
+            }
         }
     }
 }
