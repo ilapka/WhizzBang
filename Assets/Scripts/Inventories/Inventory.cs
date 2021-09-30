@@ -14,21 +14,23 @@ namespace WhizzBang.Inventories
     {
         private readonly Dictionary<ItemData, InventoryCell> _itemDataCellDictionary = new Dictionary<ItemData, InventoryCell>();
 
-        public UnityEvent<ItemData> AddedItemEvent;
-        public UnityEvent<ItemData> RemovedItemEvent;
+        public UnityEvent<ItemData, int> AddedItemEvent;
+        public UnityEvent<ItemData, int> RemovedItemEvent;
 
         public void Add(ItemData itemData)
         {
+            int currentItemCount;
             if (_itemDataCellDictionary.TryGetValue(itemData, out InventoryCell inventoryCell))
             {
-                inventoryCell.ItemCount++;
+                currentItemCount = ++inventoryCell.ItemCount;
             }
             else
             {
-                _itemDataCellDictionary.Add(itemData, new InventoryCell(){ ItemCount = 1 });
+                currentItemCount = 1;
+                _itemDataCellDictionary.Add(itemData, new InventoryCell(){ ItemCount = currentItemCount });
             }
             
-            AddedItemEvent.Invoke(itemData);
+            AddedItemEvent.Invoke(itemData, currentItemCount);
         }
 
         public void Remove(ItemData itemData)
@@ -39,13 +41,13 @@ namespace WhizzBang.Inventories
                 return;
             }
             
-            inventoryCell.ItemCount--;
+            var currentItemCount = --inventoryCell.ItemCount;
             if (inventoryCell.ItemCount <= 0)
             {
                 _itemDataCellDictionary.Remove(itemData);
             }
             
-            RemovedItemEvent.Invoke(itemData);
+            RemovedItemEvent.Invoke(itemData, currentItemCount);
         }
     }
 }
