@@ -19,5 +19,20 @@ namespace WhizzBang.Inputs
                 VerticalInput = Input.GetAxis("Vertical"),
             });
         }
+
+        private void Update()
+        {
+            if(Input.GetKeyDown(KeyCode.LeftArrow))
+                LeftArrowButtonDownEvent.Invoke();
+            
+            if(Input.GetKeyDown(KeyCode.RightArrow))
+                RightArrowButtonDownEvent.Invoke();
+            
+            if(Input.GetMouseButton(0))
+                HoldMouseButtonEvent.Invoke();
+            
+            if(Input.GetMouseButtonUp(0))
+                MouseButtonUpEvent.Invoke();
+        }
     }
 }

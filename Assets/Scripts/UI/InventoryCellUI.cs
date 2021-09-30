@@ -10,7 +10,7 @@ namespace WhizzBang.UI
         [SerializeField] private Image itemImage;
         [SerializeField] private TextMeshProUGUI itemCount;
 
-        public void SetItem(int count, ItemData itemData = null)
+        public void Init(int count, ItemData itemData = null)
         {
             if(itemData != null)
                 itemImage.sprite = itemData.itemUISprite;

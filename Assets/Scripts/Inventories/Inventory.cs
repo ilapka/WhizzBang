@@ -1,53 +1,102 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using WhizzBang.Data;
 
 namespace WhizzBang.Inventories
 {
-    public struct InventoryCell
+    public class ItemCell
     {
+        public ItemCell(ItemData data, int index)
+        {
+            Data = data;
+            Index = index;
+        }
+
+        public void Increase() => ItemCount++;
+        public void Decrease() => ItemCount--;
+        
         public int ItemCount;
+        public ItemData Data;
+        public int Index;
     }
 
     public class Inventory : MonoBehaviour
     {
-        private readonly Dictionary<ItemData, InventoryCell> _itemDataCellDictionary = new Dictionary<ItemData, InventoryCell>();
+        private readonly List<ItemCell> _itemsCellList = new List<ItemCell>();
+        
+        public UnityEvent<ItemCell> AddedItemEvent;
+        public UnityEvent<ItemCell> RemovedItemEvent;
 
-        public UnityEvent<ItemData, int> AddedItemEvent;
-        public UnityEvent<ItemData, int> RemovedItemEvent;
-
-        public void Add(ItemData itemData)
+        public void AddItem(ItemData itemData)
         {
-            int currentItemCount;
-            if (_itemDataCellDictionary.TryGetValue(itemData, out InventoryCell inventoryCell))
+            var itemCell = _itemsCellList.Find(cell => cell.Data == itemData);
+            if (itemCell == null)
             {
-                currentItemCount = ++inventoryCell.ItemCount;
+                itemCell = new ItemCell(itemData, _itemsCellList.Count);
+                _itemsCellList.Add(itemCell);
             }
-            else
-            {
-                currentItemCount = 1;
-                _itemDataCellDictionary.Add(itemData, new InventoryCell(){ ItemCount = currentItemCount });
-            }
-            
-            AddedItemEvent.Invoke(itemData, currentItemCount);
+            itemCell.Increase();
+            AddedItemEvent.Invoke(itemCell);
         }
 
-        public void Remove(ItemData itemData)
+        public void RemoveItem(ItemData itemData)
         {
-            if (!_itemDataCellDictionary.TryGetValue(itemData, out InventoryCell inventoryCell))
+            var itemCell = _itemsCellList.Find(cell => cell.Data == itemData);
+            if (itemCell.Data == null)
             {
                 Debug.Log("The item you are trying to remove not found");
                 return;
             }
-            
-            var currentItemCount = --inventoryCell.ItemCount;
-            if (inventoryCell.ItemCount <= 0)
+
+            itemCell.Decrease();
+            if (itemCell.ItemCount <= 0)
             {
-                _itemDataCellDictionary.Remove(itemData);
+                _itemsCellList.Remove(itemCell);
+            }
+            RemovedItemEvent.Invoke(itemCell);
+        }
+
+        public bool GetNextItem(int currentCellIndex, out ItemCell nextItemCell)
+        {
+            if (_itemsCellList.Count <= 0 || _itemsCellList.Count <= ++currentCellIndex)
+            {
+                nextItemCell = null;
+                return false;
             }
             
-            RemovedItemEvent.Invoke(itemData, currentItemCount);
+            nextItemCell = _itemsCellList[currentCellIndex];
+            return true;
+        }
+        
+        public bool GetPreviousItem(int currentCellIndex, out ItemCell previousNextItemCell)
+        {
+            if (_itemsCellList.Count <= 0 || --currentCellIndex < 0)
+            {
+                previousNextItemCell = null;
+                return false;
+            }
+            
+            previousNextItemCell = _itemsCellList[currentCellIndex];
+            return true;
+        }
+
+        public bool GetSameOrNextItem(int currentCellIndex, out ItemCell sameOrNextItemCell)
+        {
+            if (_itemsCellList.Count <= 0)
+            {
+                sameOrNextItemCell = null;
+                return false;
+            }
+
+            if (_itemsCellList.Count == currentCellIndex)
+                currentCellIndex--;
+            
+
+            sameOrNextItemCell = _itemsCellList[currentCellIndex];
+            return true;
         }
     }
 }

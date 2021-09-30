@@ -19,35 +19,35 @@ namespace WhizzBang.UI
             inventory.AddedItemEvent.AddListener(RemoveItemFromUI);
         }
 
-        private void AddItemOnUI(ItemData itemData, int count)
+        private void AddItemOnUI(ItemCell itemCell)
         {
-            if (_itemCellUiDictionary.TryGetValue(itemData, out InventoryCellUI inventoryCellUI))
+            if (_itemCellUiDictionary.TryGetValue(itemCell.Data, out InventoryCellUI inventoryCellUI))
             {
-                inventoryCellUI.SetItem(count);
+                inventoryCellUI.Init(itemCell.ItemCount);
                 return;
             }
 
             var itemCellUI = Instantiate(inventoryCellUIPrefab, transform);
-            itemCellUI.SetItem(count, itemData);
-            _itemCellUiDictionary.Add(itemData, itemCellUI);
+            itemCellUI.Init(itemCell.ItemCount, itemCell.Data);
+            _itemCellUiDictionary.Add(itemCell.Data, itemCellUI);
         }
         
-        private void RemoveItemFromUI(ItemData itemData, int count)
+        private void RemoveItemFromUI(ItemCell itemCell)
         {
-            if (!_itemCellUiDictionary.TryGetValue(itemData, out InventoryCellUI inventoryCellUI))
+            if (!_itemCellUiDictionary.TryGetValue(itemCell.Data, out InventoryCellUI inventoryCellUI))
             {
                 Debug.Log("UI-item you are trying to remove not found");
                 return;
             }
 
-            if (count > 0)
+            if (itemCell.ItemCount > 0)
             {
-                inventoryCellUI.SetItem(count);
+                inventoryCellUI.Init(itemCell.ItemCount);
             }
             else
             {
                 Destroy(inventoryCellUI);
-                _itemCellUiDictionary.Remove(itemData);
+                _itemCellUiDictionary.Remove(itemCell.Data);
             }
         }
 

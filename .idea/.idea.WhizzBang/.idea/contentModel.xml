@@ -77,10 +77,15 @@
             <e p="PickUpItems" t="Include">
               <e p="PickUpItem.cs" t="Include" />
             </e>
+            <e p="UsableItem" t="Include">
+              <e p="Projectile.cs" t="Include" />
+              <e p="UsableItem.cs" t="Include" />
+            </e>
           </e>
           <e p="Player" t="Include">
+            <e p="Hands.cs" t="Include" />
             <e p="ItemCollector.cs" t="Include" />
-            <e p="PlayerMovement.cs" t="Include" />
+            <e p="Movement.cs" t="Include" />
           </e>
           <e p="Spawners" t="Include">
             <e p="SpawnableObject.cs" t="Include" />
