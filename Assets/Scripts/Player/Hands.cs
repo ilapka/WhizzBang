@@ -1,8 +1,10 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 using WhizzBang.Data;
 using WhizzBang.Inputs;
 using WhizzBang.Inventories;
+using WhizzBang.Inventories.UsableItem;
 
 namespace WhizzBang.Player
 {
@@ -12,49 +14,66 @@ namespace WhizzBang.Player
         [SerializeField] private Inventory inventory;
         [SerializeField] private Transform handContainer;
 
-        private GameObject _currentItem;
+        private UsableItem _currentItem;
         private ItemCell _currentItemCell;
         
         private void Start()
         {
-            inventory.AddedItemEvent.AddListener(itemData => TakeItem(itemData, false));
-            inputShell.RightArrowButtonDown.AddListener(TakeNextItem);
-            inputShell.LeftArrowButtonDown.AddListener(TakePreviousItem);
+            inventory.AddedItemEvent.AddListener(itemData => Take(itemData, false));
+            inputShell.RightArrowButtonDownEvent.AddListener(NextItem);
+            inputShell.LeftArrowButtonDownEvent.AddListener(PreviousItem);
+            inputShell.HoldMouseButtonEvent.AddListener(OnMouseHold);
+            inputShell.MouseButtonUpEvent.AddListener(OnMouseButtonUp);
         }
         
-        private void TakeItem(ItemCell itemCell, bool overrideCurrent)
+        private void Take(ItemCell itemCell, bool overrideCurrent)
         {
             if (!overrideCurrent && _currentItem != null) return;
 
             Destroy(_currentItem);
             _currentItemCell = itemCell;
-            _currentItem = Instantiate(itemCell.Data.prefab, handContainer);
+            _currentItem = Instantiate(itemCell.Data.usableItemPrefab, handContainer);
+            _currentItem.Init(this);
         }
         
-        private void TakeNextItem()
+        public void Realise()
+        {
+            inventory.RemoveItem(_currentItemCell.Data);
+            _currentItem.transform.SetParent(null);
+            _currentItem = null;
+            
+            if(!inventory.GetSameOrNextItem(_currentItemCell.Index, out ItemCell sameOrNextItemCell))
+                return;
+
+            Take(sameOrNextItemCell, true);
+        }
+        
+        private void NextItem()
         {
             if(!inventory.GetNextItem(_currentItemCell.Index, out var nextItemCell))
                 return;
-            TakeItem(nextItemCell,true);
+            Take(nextItemCell,true);
         }
 
-        private void TakePreviousItem()
+        private void PreviousItem()
         {
             if(!inventory.GetPreviousItem(_currentItemCell.Index, out var nextItemCell))
                 return;
-            TakeItem(nextItemCell,true);
+            Take(nextItemCell,true);
         }
         
-        /*
-        public void UseCurrentItem()
+        private void OnMouseHold()
         {
             if(_currentItem == null) return;
-            
-            //... _currentItem ...
-            
-            inventory.RemoveItem(_currentItemData);
-            //Take
-            TakeNextItem();
-        }*/
+
+            _currentItem.OnMouseHold();
+        }
+        
+        private void OnMouseButtonUp()
+        {
+            if(_currentItem == null) return;
+
+            _currentItem.OnMouseButtonUp();
+        }
     }
 }

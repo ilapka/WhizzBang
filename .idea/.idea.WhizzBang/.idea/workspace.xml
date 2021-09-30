@@ -27,26 +27,17 @@
     <list default="true" id="2260e4c0-5277-4b20-96d9-cf35f735da7f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/ItemData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/ItemData.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/BlackBombData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/BlackBombData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/BlueBombData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/BlueBombData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/RedBombData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Items/Projectiles/RedBombData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/BlackBomb.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/BlackBomb.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/BlueBomb.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/BlueBomb.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/RedBomb.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/RedBomb.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/BlackBombProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/BlackBombProjectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/BlueBombProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/BlueBombProjectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/RedBombProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/RedBombProjectile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/InputShell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/InputShell.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/PlayerInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/ItemCollector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/ItemCollector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Hands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Hands.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +49,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A6C194-5F57-4474-95FC-AD42118554C7/45/ec3b3798/SortedDictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/UsableItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Hands.cs" root0="FORCE_HIGHLIGHTING" />
@@ -107,13 +100,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/MovementData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Rotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extensions/SortedDictionaryExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/InputShell.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Hands.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/UsableItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/InputShell.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Hands.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
       </list>
     </option>
   </component>
@@ -160,7 +155,7 @@
       <workItem from="1632828480846" duration="12255000" />
       <workItem from="1632857462386" duration="5709000" />
       <workItem from="1632904024688" duration="6449000" />
-      <workItem from="1632991574656" duration="7198000" />
+      <workItem from="1632991574656" duration="11513000" />
     </task>
     <servers />
   </component>
@@ -189,9 +184,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="788" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1632850728612" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1632959390128">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1633006085589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1632959390128" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1633006085589" />
   </component>
 </project>

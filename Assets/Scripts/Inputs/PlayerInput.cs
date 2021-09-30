@@ -23,10 +23,16 @@ namespace WhizzBang.Inputs
         private void Update()
         {
             if(Input.GetKeyDown(KeyCode.LeftArrow))
-                LeftArrowButtonDown.Invoke();
+                LeftArrowButtonDownEvent.Invoke();
             
             if(Input.GetKeyDown(KeyCode.RightArrow))
-                RightArrowButtonDown.Invoke();
+                RightArrowButtonDownEvent.Invoke();
+            
+            if(Input.GetMouseButton(0))
+                HoldMouseButtonEvent.Invoke();
+            
+            if(Input.GetMouseButtonUp(0))
+                MouseButtonUpEvent.Invoke();
         }
     }
 }

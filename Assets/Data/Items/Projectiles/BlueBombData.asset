@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8129ab333b8430d99ac2245d46e455b, type: 3}
   m_Name: BlueBombData
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5069838382432919051, guid: c5b3efba450a7254f903bfd80b4c843c, type: 3}
+  usableItemPrefab: {fileID: -3784755207520165075, guid: c5b3efba450a7254f903bfd80b4c843c, type: 3}

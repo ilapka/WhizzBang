@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8129ab333b8430d99ac2245d46e455b, type: 3}
   m_Name: BlackBombData
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7175514424446109055, guid: d567106f4811073478511ad253f9564c, type: 3}
+  usableItemPrefab: {fileID: 3503575639985195680, guid: d567106f4811073478511ad253f9564c, type: 3}

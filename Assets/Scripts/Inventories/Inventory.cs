@@ -7,8 +7,17 @@ using WhizzBang.Data;
 
 namespace WhizzBang.Inventories
 {
-    public struct ItemCell
+    public class ItemCell
     {
+        public ItemCell(ItemData data, int index)
+        {
+            Data = data;
+            Index = index;
+        }
+
+        public void Increase() => ItemCount++;
+        public void Decrease() => ItemCount--;
+        
         public int ItemCount;
         public ItemData Data;
         public int Index;
@@ -24,17 +33,12 @@ namespace WhizzBang.Inventories
         public void AddItem(ItemData itemData)
         {
             var itemCell = _itemsCellList.Find(cell => cell.Data == itemData);
-            if (itemCell.Data != null)
+            if (itemCell == null)
             {
-                itemCell.ItemCount++;
-            }
-            else
-            {
-                itemCell.Index = _itemsCellList.Count;
-                itemCell.Data = itemData;
-                itemCell.ItemCount = 1;
+                itemCell = new ItemCell(itemData, _itemsCellList.Count);
                 _itemsCellList.Add(itemCell);
             }
+            itemCell.Increase();
             AddedItemEvent.Invoke(itemCell);
         }
 
@@ -47,7 +51,7 @@ namespace WhizzBang.Inventories
                 return;
             }
 
-            itemCell.ItemCount--;
+            itemCell.Decrease();
             if (itemCell.ItemCount <= 0)
             {
                 _itemsCellList.Remove(itemCell);
@@ -59,7 +63,7 @@ namespace WhizzBang.Inventories
         {
             if (_itemsCellList.Count <= 0 || _itemsCellList.Count <= ++currentCellIndex)
             {
-                nextItemCell = default;
+                nextItemCell = null;
                 return false;
             }
             
@@ -71,11 +75,27 @@ namespace WhizzBang.Inventories
         {
             if (_itemsCellList.Count <= 0 || --currentCellIndex < 0)
             {
-                previousNextItemCell = default;
+                previousNextItemCell = null;
                 return false;
             }
             
             previousNextItemCell = _itemsCellList[currentCellIndex];
+            return true;
+        }
+
+        public bool GetSameOrNextItem(int currentCellIndex, out ItemCell sameOrNextItemCell)
+        {
+            if (_itemsCellList.Count <= 0)
+            {
+                sameOrNextItemCell = null;
+                return false;
+            }
+
+            if (_itemsCellList.Count == currentCellIndex)
+                currentCellIndex--;
+            
+
+            sameOrNextItemCell = _itemsCellList[currentCellIndex];
             return true;
         }
     }
