@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ivan" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2260e4c0-5277-4b20-96d9-cf35f735da7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhizzBang/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Enemies/CiclopeEnemyData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Enemies/CiclopeEnemyData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Enemies/FieryEnemyData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Enemies/FieryEnemyData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/BlackBombProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/BlackBombProjectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/BlueBombProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/BlueBombProjectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/RedBombProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bombs/Projectile/RedBombProjectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Cyclopes.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Cyclopes.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Fiery.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Fiery.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/EnemyData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/EnemyData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IHaveHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IHaveHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A6C194-5F57-4474-95FC-AD42118554C7/45/ec3b3798/SortedDictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/Trajectory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PopUpText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/UsableItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Hands.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/7a/010bca28/UnityEvent`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/ItemCollector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PopUpManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bombs/Bomb.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ITakeDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PickUpItems/IPickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/PickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/PlayerInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/PickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/PickUpItems/BombPickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory/InventoryItems/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItems/InventoryItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/BombPickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/ItemType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/NewBehaviourScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItems/ItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/PickUpItems/PickUpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/ItemCollector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/MovementData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Rotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ProjectileItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extensions/SortedDictionaryExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryCellUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemCellUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/ItemCell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/InputShell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Hands.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/UsableItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/Trajectory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extensions/VectorExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extensions/VectorCalculator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extensions/SpatialCalculator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Calculators/SpatialCalculator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PopUpText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IHaveHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/EnemyData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/UsableItem/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PopUpManager.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ylWLKlgpavNkL4JVExCKeHI13L" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2260e4c0-5277-4b20-96d9-cf35f735da7f" name="Default Changelist" comment="" />
+      <created>1632826606158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632826606158</updated>
+      <workItem from="1632826621949" duration="1754000" />
+      <workItem from="1632828480846" duration="12255000" />
+      <workItem from="1632857462386" duration="5709000" />
+      <workItem from="1632904024688" duration="6449000" />
+      <workItem from="1632991574656" duration="28311000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="788" y="194" key="RiderGenerateDialog" timestamp="1632850728612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="788" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1632850728612" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1633006085589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1633006085589" />
+  </component>
+</project>

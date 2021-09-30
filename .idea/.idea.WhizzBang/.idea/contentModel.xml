@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\_My_data_\Development\Projects\WhizzBang\WhizzBang" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="AssetStore" t="Include">
+          <e p="FarlandSkies" t="Include">
+            <e p="Demo" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Player" t="Include">
+                  <e p="FPSWalkerEnhanced.cs" t="Include" />
+                  <e p="SmoothMouseLook.cs" t="Include" />
+                </e>
+                <e p="Skybox" t="Include">
+                  <e p="SkyboxChanger.cs" t="Include" />
+                  <e p="SkyboxRotator.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="VFX" t="Include">
+            <e p="JMO Assets" t="Include">
+              <e p="Cartoon FX" t="Include">
+                <e p="CartoonFX Free.txt" t="Include" />
+                <e p="Demo" t="Include">
+                  <e p="Assets" t="Include">
+                    <e p="CFX_AutoStopLoopedEffect.cs" t="Include" />
+                    <e p="CFX_Demo_New.cs" t="Include" />
+                    <e p="CFX_Demo_RandomDir.cs" t="Include" />
+                    <e p="CFX_Demo_RandomDirectionTranslate.cs" t="Include" />
+                    <e p="CFX_Demo_RotateCamera.cs" t="Include" />
+                    <e p="CFX_Demo_Translate.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="CFX_AutoDestructShuriken.cs" t="Include" />
+                  <e p="CFX_AutoRotate.cs" t="Include" />
+                  <e p="CFX_LightFlicker.cs" t="Include" />
+                  <e p="CFX_LightIntensityFade.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="CFX3 Multiply Color.shader" t="Include" />
+                  <e p="CFXM_MobileParticleAdd_Alpha8.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Cartoon FX Easy Editor" t="Include">
+                <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="CFXEasyEditor.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Calculators" t="Include">
+            <e p="SpatialCalculator.cs" t="Include" />
+          </e>
+          <e p="Data" t="Include">
+            <e p="EnemyData.cs" t="Include" />
+            <e p="ItemData.cs" t="Include" />
+            <e p="MovementData.cs" t="Include" />
+            <e p="ProjectileItemData.cs" t="Include" />
+            <e p="SpawnerData.cs" t="Include" />
+          </e>
+          <e p="Enemies" t="Include">
+            <e p="Enemy.cs" t="Include" />
+          </e>
+          <e p="Inputs" t="Include">
+            <e p="InputShell.cs" t="Include" />
+            <e p="PlayerInput.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="IHaveHealth.cs" t="Include" />
+          </e>
+          <e p="Inventories" t="Include">
+            <e p="Inventory.cs" t="Include" />
+            <e p="ItemCell.cs" t="Include" />
+            <e p="PickUpItems" t="Include">
+              <e p="PickUpItem.cs" t="Include" />
+            </e>
+            <e p="UsableItem" t="Include">
+              <e p="Projectile.cs" t="Include" />
+              <e p="Trajectory.cs" t="Include" />
+              <e p="UsableItem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Player" t="Include">
+            <e p="Hands.cs" t="Include" />
+            <e p="ItemCollector.cs" t="Include" />
+            <e p="Movement.cs" t="Include" />
+          </e>
+          <e p="Spawners" t="Include">
+            <e p="SpawnableObject.cs" t="Include" />
+            <e p="Spawner.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="InventoryUI.cs" t="Include" />
+            <e p="ItemCellUI.cs" t="Include" />
+            <e p="PopUpManager.cs" t="Include" />
+            <e p="PopUpText.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="WhizzBang.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Ivan\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Ivan\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_WhizzBang.-1509263157.00" t="ExcludeRecursive" />
+  </component>
+</project>
