@@ -4,7 +4,7 @@ namespace WhizzBang.Interfaces
 {
     public interface IHaveHealth
     {
-        float Health { get; }
-        void TakeDamage(float damage);
+        int Health { get; }
+        void TakeDamage(int damage);
     }
 }
