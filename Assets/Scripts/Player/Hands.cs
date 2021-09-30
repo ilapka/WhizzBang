@@ -30,7 +30,7 @@ namespace WhizzBang.Player
         {
             if (!overrideCurrent && _currentItem != null) return;
 
-            Destroy(_currentItem);
+            if(_currentItem != null) Destroy(_currentItem.gameObject);
             _currentItemCell = itemCell;
             _currentItem = Instantiate(itemCell.Data.usableItemPrefab, handContainer);
             _currentItem.Init(this);
@@ -38,11 +38,13 @@ namespace WhizzBang.Player
         
         public void Realise()
         {
+            if(_currentItemCell == null) return;
+
             inventory.RemoveItem(_currentItemCell.Data);
             _currentItem.transform.SetParent(null);
             _currentItem = null;
             
-            if(!inventory.GetSameOrNextItem(_currentItemCell.Index, out ItemCell sameOrNextItemCell))
+            if(!inventory.GetSameOrNextItem(_currentItemCell, out ItemCell sameOrNextItemCell))
                 return;
 
             Take(sameOrNextItemCell, true);
@@ -50,16 +52,20 @@ namespace WhizzBang.Player
         
         private void NextItem()
         {
-            if(!inventory.GetNextItem(_currentItemCell.Index, out var nextItemCell))
+            if(_currentItemCell == null) return;
+            
+            if(!inventory.GetNextItem(_currentItemCell, out var nextItemCell))
                 return;
             Take(nextItemCell,true);
         }
 
         private void PreviousItem()
         {
-            if(!inventory.GetPreviousItem(_currentItemCell.Index, out var nextItemCell))
+            if(_currentItemCell == null) return;
+            
+            if(!inventory.GetPreviousItem(_currentItemCell, out var previousItemCell))
                 return;
-            Take(nextItemCell,true);
+            Take(previousItemCell,true);
         }
         
         private void OnMouseHold()

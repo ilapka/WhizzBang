@@ -7,22 +7,6 @@ using WhizzBang.Data;
 
 namespace WhizzBang.Inventories
 {
-    public class ItemCell
-    {
-        public ItemCell(ItemData data, int index)
-        {
-            Data = data;
-            Index = index;
-        }
-
-        public void Increase() => ItemCount++;
-        public void Decrease() => ItemCount--;
-        
-        public int ItemCount;
-        public ItemData Data;
-        public int Index;
-    }
-
     public class Inventory : MonoBehaviour
     {
         private readonly List<ItemCell> _itemsCellList = new List<ItemCell>();
@@ -45,12 +29,11 @@ namespace WhizzBang.Inventories
         public void RemoveItem(ItemData itemData)
         {
             var itemCell = _itemsCellList.Find(cell => cell.Data == itemData);
-            if (itemCell.Data == null)
+            if (itemCell == null)
             {
                 Debug.Log("The item you are trying to remove not found");
                 return;
             }
-
             itemCell.Decrease();
             if (itemCell.ItemCount <= 0)
             {
@@ -59,9 +42,11 @@ namespace WhizzBang.Inventories
             RemovedItemEvent.Invoke(itemCell);
         }
 
-        public bool GetNextItem(int currentCellIndex, out ItemCell nextItemCell)
+        public bool GetNextItem(ItemCell currentItemCell, out ItemCell nextItemCell)
         {
-            if (_itemsCellList.Count <= 0 || _itemsCellList.Count <= ++currentCellIndex)
+            var currentCellIndex = _itemsCellList.IndexOf(currentItemCell);
+            currentCellIndex++;
+            if (_itemsCellList.Count <= 0 || _itemsCellList.Count <= currentCellIndex)
             {
                 nextItemCell = null;
                 return false;
@@ -71,9 +56,11 @@ namespace WhizzBang.Inventories
             return true;
         }
         
-        public bool GetPreviousItem(int currentCellIndex, out ItemCell previousNextItemCell)
+        public bool GetPreviousItem(ItemCell currentItemCell, out ItemCell previousNextItemCell)
         {
-            if (_itemsCellList.Count <= 0 || --currentCellIndex < 0)
+            var currentCellIndex = _itemsCellList.IndexOf(currentItemCell);
+            currentCellIndex--;
+            if (_itemsCellList.Count <= 0 || currentCellIndex < 0)
             {
                 previousNextItemCell = null;
                 return false;
@@ -83,18 +70,15 @@ namespace WhizzBang.Inventories
             return true;
         }
 
-        public bool GetSameOrNextItem(int currentCellIndex, out ItemCell sameOrNextItemCell)
+        public bool GetSameOrNextItem(ItemCell currentItemCell, out ItemCell sameOrNextItemCell)
         {
+            var currentCellIndex = _itemsCellList.IndexOf(currentItemCell);
             if (_itemsCellList.Count <= 0)
             {
                 sameOrNextItemCell = null;
                 return false;
             }
-
-            if (_itemsCellList.Count == currentCellIndex)
-                currentCellIndex--;
-            
-
+            currentCellIndex = Mathf.Clamp(currentCellIndex, 0, _itemsCellList.Count - 1);
             sameOrNextItemCell = _itemsCellList[currentCellIndex];
             return true;
         }

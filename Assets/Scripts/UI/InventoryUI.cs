@@ -8,33 +8,33 @@ namespace WhizzBang.UI
 {
     public class InventoryUI : MonoBehaviour
     {
-        private readonly Dictionary<ItemData, InventoryCellUI> _itemCellUiDictionary = new Dictionary<ItemData, InventoryCellUI>();
+        private readonly Dictionary<ItemData, ItemCellUI> _itemCellUiDictionary = new Dictionary<ItemData, ItemCellUI>();
         
         [SerializeField] private Inventory inventory;
-        [SerializeField] private InventoryCellUI inventoryCellUIPrefab;
+        [SerializeField] private ItemCellUI itemCellUIPrefab;
 
         private void Start()
         {
             inventory.AddedItemEvent.AddListener(AddItemOnUI);
-            inventory.AddedItemEvent.AddListener(RemoveItemFromUI);
+            inventory.RemovedItemEvent.AddListener(RemoveItemFromUI);
         }
 
         private void AddItemOnUI(ItemCell itemCell)
         {
-            if (_itemCellUiDictionary.TryGetValue(itemCell.Data, out InventoryCellUI inventoryCellUI))
+            if (_itemCellUiDictionary.TryGetValue(itemCell.Data, out ItemCellUI inventoryCellUI))
             {
-                inventoryCellUI.Init(itemCell.ItemCount);
+                inventoryCellUI.Set(itemCell.ItemCount);
                 return;
             }
 
-            var itemCellUI = Instantiate(inventoryCellUIPrefab, transform);
-            itemCellUI.Init(itemCell.ItemCount, itemCell.Data);
+            var itemCellUI = Instantiate(itemCellUIPrefab, transform);
+            itemCellUI.Set(itemCell.ItemCount, itemCell.Data);
             _itemCellUiDictionary.Add(itemCell.Data, itemCellUI);
         }
         
         private void RemoveItemFromUI(ItemCell itemCell)
         {
-            if (!_itemCellUiDictionary.TryGetValue(itemCell.Data, out InventoryCellUI inventoryCellUI))
+            if (!_itemCellUiDictionary.TryGetValue(itemCell.Data, out ItemCellUI itemCellUI))
             {
                 Debug.Log("UI-item you are trying to remove not found");
                 return;
@@ -42,11 +42,11 @@ namespace WhizzBang.UI
 
             if (itemCell.ItemCount > 0)
             {
-                inventoryCellUI.Init(itemCell.ItemCount);
+                itemCellUI.Set(itemCell.ItemCount);
             }
             else
             {
-                Destroy(inventoryCellUI);
+                Destroy(itemCellUI.gameObject);
                 _itemCellUiDictionary.Remove(itemCell.Data);
             }
         }

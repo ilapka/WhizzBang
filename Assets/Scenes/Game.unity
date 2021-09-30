@@ -1438,6 +1438,18 @@ MonoBehaviour:
   UpdateAxisEvent:
     m_PersistentCalls:
       m_Calls: []
+  RightArrowButtonDownEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  LeftArrowButtonDownEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  HoldMouseButtonEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  MouseButtonUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1352197412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,7 +1564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 104333869}
-  inventoryCellUIPrefab: {fileID: 8695296850464331675, guid: d80e19b039707a248b160ab04d00956d, type: 3}
+  itemCellUIPrefab: {fileID: 8695296850464331675, guid: d80e19b039707a248b160ab04d00956d, type: 3}
 --- !u!1 &1412616101
 GameObject:
   m_ObjectHideFlags: 0

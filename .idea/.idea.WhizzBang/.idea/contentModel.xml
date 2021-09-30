@@ -74,6 +74,7 @@
           </e>
           <e p="Inventories" t="Include">
             <e p="Inventory.cs" t="Include" />
+            <e p="ItemCell.cs" t="Include" />
             <e p="PickUpItems" t="Include">
               <e p="PickUpItem.cs" t="Include" />
             </e>
@@ -92,8 +93,8 @@
             <e p="Spawner.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
-            <e p="InventoryCellUI.cs" t="Include" />
             <e p="InventoryUI.cs" t="Include" />
+            <e p="ItemCellUI.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
